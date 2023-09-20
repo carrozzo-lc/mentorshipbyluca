@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 // chakra
 import { Text } from '@chakra-ui/react';
 
@@ -26,9 +25,5 @@ const RichTextContent = ({ content }: { content: string | TrustedHTML }) => {
       />   
   );
 }
-
-RichTextContent.propTypes = {
-  content: PropTypes.string,
-};
 
 export default RichTextContent;

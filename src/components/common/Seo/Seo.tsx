@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import PropTypes from 'prop-types';
 
 // ----------------------------------------------------------------------
 
@@ -39,15 +38,5 @@ const Seo = ({ title, description, name, type, siteName, url, image }: seoProps)
     </Helmet>
   )
 }
-
-Seo.propTypes = {
-  title: PropTypes.string, 
-  description: PropTypes.string, 
-  name: PropTypes.string, 
-  type: PropTypes.string, 
-  siteName: PropTypes.string, 
-  url: PropTypes.string, 
-  image: PropTypes.string,
-};
 
 export default Seo;

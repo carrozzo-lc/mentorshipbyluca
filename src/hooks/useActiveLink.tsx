@@ -2,7 +2,7 @@ import { useLocation, matchPath } from 'react-router-dom';
 
 // ----------------------------------------------------------------------
 
-export default function useActiveLink(path, deep = true) {
+export default function useActiveLink(path: string, deep: boolean = true) {
   const { pathname } = useLocation();
 
   const normalActive = path ? !!matchPath({ path, end: true }, pathname) : false;
