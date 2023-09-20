@@ -5,7 +5,7 @@ import Router from './routes';
 
 // ----------------------------------------------------------------------
 
-function App() {
+const App = () => {
   return (
     <HelmetProvider>   
       <BrowserRouter>

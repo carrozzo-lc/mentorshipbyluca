@@ -3,7 +3,17 @@ import PropTypes from 'prop-types';
 
 // ----------------------------------------------------------------------
 
-const Seo = ({ title, description, name, type, siteName, url, image }) => {
+type seoProps = {
+  title: string, 
+  description: string,
+  name: string, 
+  type: string, 
+  siteName: string, 
+  url: string, 
+  image: string
+}
+
+const Seo = ({ title, description, name, type, siteName, url, image }: seoProps) => {
   return (
     <Helmet>
       { /* Standard metadata tags */}

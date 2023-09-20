@@ -4,7 +4,7 @@ import { Text } from '@chakra-ui/react';
 
 // ----------------------------------------------------------------------
 
-const RichTextContent = ({ content }) => {
+const RichTextContent = ({ content }: { content: string | TrustedHTML }) => {
   return (
       <Text 
         as="div" fontSize={'md'}

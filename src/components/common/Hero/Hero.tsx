@@ -1,10 +1,15 @@
-import PropTypes from 'prop-types';
 // chakra
 import { Heading, Button, Box, Text } from '@chakra-ui/react'
 
 // ----------------------------------------------------------------------
 
-const Hero = ({ title, description, scrollButton}) => {
+type HeroProps = {
+  title: string,
+  description: string,
+  scrollButton: boolean
+}
+
+const Hero = ({ title, description, scrollButton}: HeroProps) => {
   return (
     <Box 
       bg='brand.500' 
@@ -34,11 +39,5 @@ const Hero = ({ title, description, scrollButton}) => {
     </Box>
   );
 }
-
-Hero.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  scrollButton: PropTypes.bool,
-};
 
 export default Hero;

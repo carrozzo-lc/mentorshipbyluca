@@ -58,9 +58,21 @@ const dataObj = {
       }                      
     ]
   }
+};
+
+enum IconName {
+  frontEnd = "front-end",
+  uiUx = "ui-ux",
+  htmlCss = "html-css",
+  js = "javascript",
+  react = "react",
+  shopify = "shopify",
+  wordpress = "wordpress"
 }
 
-const getIcon = (value) => {
+type IconResult = JSX.Element | string;
+
+const getIcon = (value: IconName | string): IconResult => {
   switch (value) {
     case 'front-end':
       return (
