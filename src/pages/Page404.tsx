@@ -8,19 +8,18 @@ import Logo from '../assets/lucacarrozzo-logo.svg';
 
 const Page404 = () => {
   return (
-    <ChakraProvider theme={theme} resetCss={false}>
+    <ChakraProvider theme={theme} resetCSS={false}>
       <Box bg='brand.50'>
         <Container p={10}>
           <Box margin="auto" width="132px" mb={5}>
             <Image
-              
               htmlWidth="132px"
               htmlHeight="60px"
-              objectFit='fit'          
+              objectFit='fill'          
               src={Logo}
             />
           </Box>
-          <Heading as="h1" size="2xl" mb={5} align="center">
+          <Heading as="h1" size="2xl" mb={5}>
             Oops! Page not found.      
           </Heading>
           <Text as="div" fontSize="xl" align="center">

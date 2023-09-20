@@ -10,7 +10,7 @@ type CtaTextImageProps = {
   btnText: string, 
   btnRoute: string, 
   image: string, 
-  imageToText: boolean
+  imageToText?: boolean
 }
 
 const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToText }: CtaTextImageProps) => {

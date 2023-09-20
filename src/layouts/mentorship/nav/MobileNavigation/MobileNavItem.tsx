@@ -4,7 +4,12 @@ import { Flex, Text, Stack, Link } from '@chakra-ui/react';
 
 // ----------------------------------------------------------------------
 
-const MobileNavItem = ({ label, href }) => {
+type MobileNavItemProps = {
+  label: string,
+  href: string
+}
+
+const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
   return (
     <Stack spacing={4}>
       <Flex

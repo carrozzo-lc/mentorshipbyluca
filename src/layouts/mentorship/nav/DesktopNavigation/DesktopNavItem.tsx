@@ -7,7 +7,14 @@ import useActiveLink from '../../../../hooks/useActiveLink';
 
 // ----------------------------------------------------------------------
 
-const DesktopNavItem = ({ navItem }) => {
+type DesktopNavItemProps = {
+  navItem:{
+    label: string,
+    href: string,
+  }
+}
+
+const DesktopNavItem = ({ navItem }: DesktopNavItemProps) => {
   const linkColor = 'white';
   const linkHoverColor = 'brand.100';  
 

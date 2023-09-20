@@ -12,7 +12,7 @@ import Footer from './Footer';
 
 export default function MentorshipLayout() {
   return (
-    <ChakraProvider theme={theme} resetCss={false}>
+    <ChakraProvider theme={theme} resetCSS={false}>
       <Box bg='brand.50'>
         <Header />
         <Outlet />

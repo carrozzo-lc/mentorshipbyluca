@@ -4,7 +4,7 @@ import LoadingScreen from '../components/common/loading-screen';
 
 // ----------------------------------------------------------------------
 
-const Loadable = (Component) => (props) =>
+const Loadable = <Props extends {}>(Component: React.ComponentType<Props>) => (props: Props) =>
   (
     <Suspense fallback={<LoadingScreen />}>
       <Component {...props} />
@@ -14,7 +14,6 @@ const Loadable = (Component) => (props) =>
 // ----------------------------------------------------------------------
 
 // MAIN
-//export const HomePage = Loadable(lazy(() => import('../pages/HomePage')));
 export const GeneralPage = Loadable(lazy(() => import('../pages/mentorship/GeneralPage')));
 export const CareerPage = Loadable(lazy(() => import('../pages/mentorship/CareerPage')));
 export const EntrepeneurPage = Loadable(lazy(() => import('../pages/mentorship/EntrepeneurPage')));

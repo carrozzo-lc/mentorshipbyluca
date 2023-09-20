@@ -5,8 +5,8 @@ import { Heading, Button, Box, Text } from '@chakra-ui/react'
 
 type HeroProps = {
   title: string,
-  description: string,
-  scrollButton: boolean
+  description?: string,
+  scrollButton?: boolean
 }
 
 const Hero = ({ title, description, scrollButton}: HeroProps) => {

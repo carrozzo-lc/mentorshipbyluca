@@ -2,17 +2,17 @@ import { Helmet } from 'react-helmet-async';
 
 // ----------------------------------------------------------------------
 
-type seoProps = {
+type SeoProps = {
   title: string, 
   description: string,
   name: string, 
   type: string, 
   siteName: string, 
   url: string, 
-  image: string
+  image?: string
 }
 
-const Seo = ({ title, description, name, type, siteName, url, image }: seoProps) => {
+const Seo = ({ title, description, name, type, siteName, url, image }: SeoProps) => {
   return (
     <Helmet>
       { /* Standard metadata tags */}
