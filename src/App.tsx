@@ -1,3 +1,6 @@
+// i18n
+import './locales/i18n';
+
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 // routes
