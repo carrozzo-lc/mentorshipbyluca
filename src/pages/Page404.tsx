@@ -5,10 +5,14 @@ import theme from '../themes';
 import '../themes/styles.css';
 // icons
 import Logo from '../assets/lucacarrozzo-logo.svg';
+// locales
+import { useLocales } from '../locales';
 
 const Page404 = () => {
+  const { translate } = useLocales();
+
   return (
-    <ChakraProvider theme={theme} resetCSS={false}>
+    <ChakraProvider theme={theme} resetCSS={true}>
       <Box bg='brand.50'>
         <Container p={10}>
           <Box margin="auto" width="132px" mb={5}>
@@ -20,14 +24,14 @@ const Page404 = () => {
             />
           </Box>
           <Heading as="h1" size="2xl" mb={5}>
-            Oops! Page not found.      
+            {translate('page_404.title')}
           </Heading>
           <Text as="div" fontSize="xl" align="center">
-            Our team is on the case to track it down. In the meantime, take a breather and enjoy a virtual cup of tea. We'll have things sorted in a jiffy!      
+            {translate('page_404.content')}
           </Text>
           <Box textAlign="center" mt={6} mb={10}>
             <Button as={RouteLink} to="/" colorScheme='black' variant='outline'>
-              back to home page
+              {translate('page_404.back_link')}
             </Button>          
           </Box>
         </Container>      
