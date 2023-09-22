@@ -112,7 +112,10 @@ const en = {
         }                      
       ]    
     },
-    cta_portfolio: "Go to full portfolio"    
+    cta_portfolio: {
+      text: "Go to full portfolio",
+      link: "https://lucacarrozzo.com"
+    }    
   },
   footer: {
     cta_message: "Need freelance help for your product idea? Let's connect and make it happen!"

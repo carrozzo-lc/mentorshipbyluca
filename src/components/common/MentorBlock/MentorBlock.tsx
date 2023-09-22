@@ -1,4 +1,3 @@
-import { Link as RouteLink } from "react-router-dom";
 // chakra
 import { Image, Container, Heading, Button, Stack, Text, Box, VStack, Flex, Icon, Link } from '@chakra-ui/react';
 // assets
@@ -200,15 +199,14 @@ const MentorBlock = () => {
               ))}
             </VStack>
             <Button
-              as={RouteLink}
-              to={'/'}
+              as={Link} 
               width="100%"
               mt="32px"
               variant="outline"
               borderColor="gray.700"
-            >
-              {translate('mentor_block.cta_portfolio')}
-            </Button>                
+              href={translate('mentor_block.cta_portfolio.link')}
+            >{translate('mentor_block.cta_portfolio.text')}
+            </Button>                          
           </Box>
         </Stack>
 

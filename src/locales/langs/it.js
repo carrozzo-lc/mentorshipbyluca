@@ -112,7 +112,10 @@ const it = {
         }
       ]
     },
-    "cta_portfolio": "Vai al portfolio completo"    
+    "cta_portfolio": {
+      "text": "Vai al portfolio completo",
+      "link": "https://lucacarrozzo.com"
+    }           
   },  
   "footer": {
     "cta_message": "Hai bisogno di aiuto freelance per la tua idea di prodotto? Connettiamoci e rendiamolo realtà!"
