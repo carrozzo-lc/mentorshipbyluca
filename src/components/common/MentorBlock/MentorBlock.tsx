@@ -4,6 +4,8 @@ import { Image, Container, Heading, Button, Stack, Text, Box, VStack, Flex, Icon
 // assets
 import image from '../../../assets/profilo.jpg';
 import { FaFilePen, FaSquareJs, FaReact, FaShopify, FaWordpressSimple } from 'react-icons/fa6';
+// locales
+import { useLocales } from '../../../locales';
 
 // ----------------------------------------------------------------------
 
@@ -72,6 +74,12 @@ enum IconName {
 
 type IconResult = JSX.Element | string;
 
+type SkillItem = {
+  icon: string;
+  title: string;
+  subtitle: string;
+}
+
 const getIcon = (value: IconName | string): IconResult => {
   switch (value) {
     case 'front-end':
@@ -108,6 +116,11 @@ const getIcon = (value: IconName | string): IconResult => {
 }
 
 const MentorBlock = () => {
+  const { translate } = useLocales();
+  const skillList: SkillItem[] = translate('mentor_block.expertise.skillList', {
+    returnObjects: true,
+  }) as unknown as SkillItem[]; // Cast the result to the SkillItem[] type
+
   return (
     <Container 
       maxW={'990px'} 
@@ -141,30 +154,30 @@ const MentorBlock = () => {
             mb="8px"
           />        
           <Heading as="h3" size="lg" mb="2px">
-            {dataObj.intro.title}
+            {translate('mentor_block.intro.title')}
           </Heading>
           <Text fontSize="sm" color="gray.600" mb="14px">
-            {dataObj.intro.subtitle}
+            {translate('mentor_block.intro.subtitle')}
           </Text>
           <Button
             as={Link} 
             colorScheme="orange" 
             size="sm"
-            href={dataObj.intro.linkBtn}
+            href={translate('mentor_block.intro.linkBtn')}
             width="100%"
             isExternal
           >
-            {dataObj.intro.textBtn}
+            {translate('mentor_block.intro.textBtn')}
           </Button>
         </Box>
 
         <Stack spacing='28px' pl={{ base: 0, md: "32px" }}>
           <Box>
             <Heading as="h3" size="md" mb="13px">
-              {dataObj.about.title}
+              {translate('mentor_block.about.title')}
             </Heading>
             <Text fontSize="md">
-              {dataObj.about.description}
+              {translate('mentor_block.about.description')}
             </Text>                   
           </Box>
           <Box>
@@ -172,7 +185,7 @@ const MentorBlock = () => {
               {dataObj.expertise.title}
             </Heading>
             <VStack spacing={6} align="left">
-              {dataObj.expertise.skillList.map(item => (
+              {skillList.map((item: SkillItem) => (
                 <Flex key={item.title}>
                   {getIcon(item.icon)}
                   <Box pl={{ base: 4, md: 4 }} mt={-1}>
@@ -194,7 +207,7 @@ const MentorBlock = () => {
               variant="outline"
               borderColor="gray.700"
             >
-              Go to full portfolio
+              {translate('mentor_block.cta_portfolio')}
             </Button>                
           </Box>
         </Stack>
