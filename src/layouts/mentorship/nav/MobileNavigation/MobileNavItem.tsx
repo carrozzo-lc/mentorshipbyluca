@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
 // chakra
 import { Flex, Text, Stack, Link } from '@chakra-ui/react';
+// locales
+import { useLocales } from '../../../../locales';
 
 // ----------------------------------------------------------------------
 
@@ -10,6 +11,8 @@ type MobileNavItemProps = {
 }
 
 const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
+  const { translate } = useLocales();
+
   return (
     <Stack spacing={4}>
       <Flex
@@ -24,16 +27,11 @@ const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
         <Text
           fontWeight={600}
           color="white">
-          {label}
+          {translate(label)}
         </Text>
       </Flex>
     </Stack>
   );
-};
-
-MobileNavItem.propTypes = {
-  label: PropTypes.string,
-  href: PropTypes.string
 };
 
 export default MobileNavItem;

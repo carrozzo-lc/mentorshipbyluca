@@ -3,11 +3,11 @@
 
 const NAV_ITEMS = [
   {
-    label: 'Mentorship for career',
+    label: 'navigation.item_1',
     href: '/career',
   },
   {
-    label: 'Mentorship for entrepeneur',
+    label: 'navigation.item_2',
     href: '/entrepeneur',
   },
 ];

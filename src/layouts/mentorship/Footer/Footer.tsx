@@ -6,22 +6,25 @@ import { EmailIcon } from '@chakra-ui/icons';
 import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa6";
 // components
 import MentorBlock from '../../../components/common/MentorBlock/MentorBlock';
+// locales
+import { useLocales } from '../../../locales';
 
 // ----------------------------------------------------------------------
 
 const Footer = () => {
   const { pathname } = useLocation();
+  const { translate } = useLocales();
 
   return(
     <Box 
       bg="brand.900" 
       pb={12} 
       px={{ base: '12px', md: '24px' }}
-      pt={pathname !== '/mentorship' ? 46 : 0}
+      pt={pathname !== '/' ? 46 : 0}
     >
-      <Box position="relative" top={pathname === '/mentorship' ? '-50px' : 'inherit'} >
+      <Box position="relative" top={pathname === '/' ? '-50px' : 'inherit'} >
 
-        {pathname === '/mentorship' && <MentorBlock />}
+        {pathname === '/' && <MentorBlock />}
 
         <Box color="white" textAlign="center">
           <Heading 
@@ -29,9 +32,9 @@ const Footer = () => {
             size="lg" 
             maxWidth={600} 
             margin="auto"
-            pt={pathname === '/mentorship' ? 46 : 0} 
+            pt={pathname === '/' ? 46 : 0} 
           >
-            Need freelance help for your product idea? Let's connect and make it happen!
+            {translate('footer.cta_message')}
           </Heading>
           <HStack 
             spacing='24px' 

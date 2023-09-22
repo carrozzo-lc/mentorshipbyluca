@@ -42,7 +42,7 @@ const Header = () => {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color="white">
-            Mentorship Program
+            Mentorship by Luca
           </Heading>
         </Flex>
 
