@@ -1,5 +1,6 @@
+import { Link as RouteLink } from "react-router-dom";
 // chakra
-import { Flex, Text, Stack, Link } from '@chakra-ui/react';
+import { Flex, Text, Stack } from '@chakra-ui/react';
 // locales
 import { useLocales } from '../../../../locales';
 
@@ -17,8 +18,8 @@ const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
     <Stack spacing={4}>
       <Flex
         py={2}
-        as={Link}
-        href={href ?? '#'}
+        as={RouteLink}
+        to={href ?? '#'}
         justify={'space-between'}
         align={'center'}
         _hover={{
