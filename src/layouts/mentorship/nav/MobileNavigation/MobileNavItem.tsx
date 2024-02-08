@@ -1,8 +1,9 @@
-import { Link as RouteLink } from "react-router-dom";
+'use client';
+import { Link } from '@chakra-ui/next-js';
 // chakra
 import { Flex, Text, Stack } from '@chakra-ui/react';
-// locales
-import { useLocales } from '../../../../locales';
+// translations
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -12,14 +13,14 @@ type MobileNavItemProps = {
 }
 
 const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
-  const { translate } = useLocales();
+  const t = useTranslations('navigation');
 
   return (
     <Stack spacing={4}>
       <Flex
         py={2}
-        as={RouteLink}
-        to={href ?? '#'}
+        as={Link}
+        href={href ?? '#'}
         justify={'space-between'}
         align={'center'}
         _hover={{
@@ -28,7 +29,7 @@ const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
         <Text
           fontWeight={600}
           color="white">
-          {translate(label)}
+          {t(label)}
         </Text>
       </Flex>
     </Stack>

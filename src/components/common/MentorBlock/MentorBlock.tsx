@@ -1,10 +1,16 @@
+'use client';
+// next 
+import Image from "next/image";
 // chakra
-import { Image, Container, Heading, Button, Stack, Text, Box, VStack, Flex, Icon, Link } from '@chakra-ui/react';
+import { Container, Heading, Button, Stack, Text, Box, VStack, Flex, Icon, Link } from '@chakra-ui/react';
 // assets
-import image from '../../../assets/profilo.jpg';
+import image from '@/assets/profilo.jpg';
 import { FaFilePen, FaSquareJs, FaReact, FaShopify, FaWordpressSimple } from 'react-icons/fa6';
-// locales
-import { useLocales } from '../../../locales';
+// translations
+import { useTranslations } from 'next-intl';
+// config
+import { skillListkeys } from '@/config/translatable-lists';
+
 
 // ----------------------------------------------------------------------
 
@@ -115,10 +121,11 @@ const getIcon = (value: IconName | string): IconResult => {
 }
 
 const MentorBlock = () => {
-  const { translate } = useLocales();
-  const skillList: SkillItem[] = translate('mentor_block.expertise.skillList', {
-    returnObjects: true,
-  }) as unknown as SkillItem[]; // Cast the result to the SkillItem[] type
+  const t = useTranslations('mentor_block');
+
+  const skillList = skillListkeys.map((key) => (
+    { icon: t(`${key}.icon`), title: t(`${key}.title`), subtitle: t(`${key}.subtitle`) }
+  ));
 
   return (
     <Container 
@@ -145,38 +152,43 @@ const MentorBlock = () => {
           pr={{ base: 0, md: "32px" }}
           mb={{ base: "32px", md: 0 }}
         >
-          <Image
-            src={image}
-            width="160px"
-            margin="auto"
+          <Box
+            width={160}
             borderRadius={100}
+            margin="auto"
             mb="8px"
-          />        
+            overflow={'hidden'}
+          >
+            <Image
+              alt="me"
+              src={image}
+            />
+          </Box>        
           <Heading as="h3" size="lg" mb="2px">
-            {translate('mentor_block.intro.title')}
+            {t('intro.title')}
           </Heading>
           <Text fontSize="sm" color="gray.600" mb="14px">
-            {translate('mentor_block.intro.subtitle')}
+            {t('intro.subtitle')}
           </Text>
           <Button
             as={Link} 
             colorScheme="orange" 
             size="sm"
-            href={translate('mentor_block.intro.linkBtn')}
+            href={t('intro.linkBtn')}
             width="100%"
             isExternal
           >
-            {translate('mentor_block.intro.textBtn')}
+            {t('intro.textBtn')}
           </Button>
         </Box>
 
         <Stack spacing='28px' pl={{ base: 0, md: "32px" }}>
           <Box>
             <Heading as="h3" size="md" mb="13px">
-              {translate('mentor_block.about.title')}
+              {t('about.title')}
             </Heading>
             <Text fontSize="md">
-              {translate('mentor_block.about.description')}
+              {t('about.description')}
             </Text>                   
           </Box>
           <Box>
@@ -204,8 +216,8 @@ const MentorBlock = () => {
               mt="32px"
               variant="outline"
               borderColor="gray.700"
-              href={translate('mentor_block.cta_portfolio.link')}
-            >{translate('mentor_block.cta_portfolio.text')}
+              href={t('cta_portfolio.link')}
+            >{t('cta_portfolio.text')}
             </Button>                          
           </Box>
         </Stack>

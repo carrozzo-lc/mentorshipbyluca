@@ -3,11 +3,11 @@
 
 const NAV_ITEMS = [
   {
-    label: 'navigation.item_1',
+    label: 'item_1',
     href: '/career',
   },
   {
-    label: 'navigation.item_2',
+    label: 'item_2',
     href: '/entrepeneur',
   },
 ];

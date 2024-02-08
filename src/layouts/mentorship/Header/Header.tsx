@@ -1,4 +1,6 @@
-import { Link as RouteLink } from "react-router-dom";
+'use client';
+// next
+import { Link } from '@chakra-ui/next-js'
 // chakra
 import {
   Flex,
@@ -36,12 +38,16 @@ const Header = () => {
 
         <Flex flex={{ base: 1 }} justify={{ base: 'start', md: 'start' }}>
           <Heading
-            as={RouteLink}
-            to="/"
+            as={Link}
+            href="/"
             size={{ base: 'md', lg: 'lg' }}
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color="white">
+            color="white"
+            style={{
+              textDecoration: 'none',
+            }}
+          >
             Mentorship by Luca
           </Heading>
         </Flex>

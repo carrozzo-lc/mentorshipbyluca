@@ -1,6 +1,8 @@
-import { Link as RouteLink } from "react-router-dom";
+import { Link } from "@/navigation";
+// next 
+import Image from "next/image";
 // chakra
-import { Image, Container, Heading, Button, Stack, Text, SimpleGrid, Flex, Box, useBreakpointValue } from '@chakra-ui/react';
+import { Container, Heading, Button, Stack, Text, SimpleGrid, Flex, Box, useBreakpointValue } from '@chakra-ui/react';
 
 // ----------------------------------------------------------------------
 
@@ -41,10 +43,10 @@ const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToTex
           </Text>
           <Box mt="10px">
             <Button 
-              as={RouteLink} 
+              as={Link} 
               colorScheme="button" 
               size="lg"
-              to={btnRoute}
+              href={btnRoute}
             >{btnText}</Button>          
           </Box>
         </Stack>
@@ -56,10 +58,6 @@ const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToTex
           <Image
             alt={'feature image'}
             src={image}
-            objectFit={'cover'}
-            margin={{ base: 'auto', md: 'inherit' }}
-            maxWidth={{ base: '240px', md: '340px' }}
-            mb={{ base: 2, md: 0 }}
           />
         </Flex>
 

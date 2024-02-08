@@ -1,16 +1,31 @@
+'use client';
+import { useState } from 'react';
+// next-intl
+import { useLocale, useTranslations } from 'next-intl';
+import { useRouter, usePathname } from '@/navigation';
+// config
 import NAV_ITEMS from '../config-navigation';
 // chakra
 import { Stack, Box } from '@chakra-ui/react';
 // component
 import DesktopNavItem from './DesktopNavItem';
-// locales
-import { useLocales } from '../../../../locales';
 
 // ----------------------------------------------------------------------
 
 const DesktopNavigation = () => {
-  const { currentLang, onChangeLang } = useLocales();
-  const isIta = currentLang.value === 'it' ? 'en': 'it';
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations('header');
+  
+  const [currentLang, setCurrentLang] = useState(locale);
+
+  const onChangeLang = (value: any) => {
+    setCurrentLang(value);
+    router.replace(pathname, {locale: value});
+  }
+
+  const isIta = currentLang === 'it' ? 'en': 'it';
 
   return (
     <Stack direction={'row'} spacing={4}>
@@ -19,7 +34,7 @@ const DesktopNavigation = () => {
       ))}
       <Box>
         <Box
-          p={0}
+          p={2}
           fontWeight={'bold'}
           textTransform={'uppercase'}
           cursor={'pointer'}
@@ -29,9 +44,9 @@ const DesktopNavigation = () => {
             textDecoration: 'none',
             color: 'brand.100',
           }}
-          onClick={() => onChangeLang(`${isIta}`)}
+          onClick={() => onChangeLang(isIta)}
         >
-          {isIta}
+          <Box as="span" textTransform={'none'} fontWeight={'normal'} fontSize="xs">{t('lang_text')}: </Box>{isIta}
         </Box>
       </Box>
     </Stack>
