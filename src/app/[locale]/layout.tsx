@@ -88,7 +88,7 @@ export default function RootLayout({
           `}
         </Script>
         <Script src="https://cs.iubenda.com/autoblocking/3319743.js" strategy="afterInteractive" />
-        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" charset="UTF-8" async />
+        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" charSet="UTF-8" async />
         {/* END Iubenda script */}       
       </body>
     </html>

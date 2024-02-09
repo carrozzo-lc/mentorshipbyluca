@@ -2,7 +2,7 @@
 import { usePathname } from '@/navigation';
 
 // Determines if the provided path matches the current pathname
-function matchPath(targetPath: string, currentPathname: string, deep: boolean): boolean {
+function matchPath(targetPath: string, currentPathname: any, deep: boolean): boolean {
   if (deep) {
     return currentPathname.startsWith(targetPath);
   } else {
