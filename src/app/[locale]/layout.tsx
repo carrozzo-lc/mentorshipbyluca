@@ -1,3 +1,6 @@
+// next
+import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google'
 // translations
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
@@ -54,6 +57,39 @@ export default function RootLayout({
             {children}
           </MentorshipLayout>
         </NextIntlClientProvider>
+        
+        {/* Google analytics script */}
+        <GoogleAnalytics gaId="G-XJRJ578Y3R" />
+        {/* END Google analytics script */}
+
+        {/* Iubenda script */}
+        <Script strategy="afterInteractive">
+          {`
+            var _iub = _iub || [];
+            _iub.csConfiguration = {
+              "askConsentAtCookiePolicyUpdate":true,
+              "floatingPreferencesButtonDisplay":"bottom-right",
+              "perPurposeConsent":true,
+              "siteId":3319743,
+              "whitelabel":false,
+              "cookiePolicyId":32656893,
+              "lang":"it",
+              "banner": {
+                "acceptButtonDisplay":true,
+                "closeButtonDisplay":false,
+                "customizeButtonDisplay":true,
+                "explicitWithdrawal":true,
+                "listPurposes":true,
+                "position":"float-bottom-center",
+                "rejectButtonDisplay":true,
+                "showPurposesToggles":true
+              }
+            };
+          `}
+        </Script>
+        <Script src="https://cs.iubenda.com/autoblocking/3319743.js" strategy="afterInteractive" />
+        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" charset="UTF-8" async />
+        {/* END Iubenda script */}       
       </body>
     </html>
   )
