@@ -1,6 +1,6 @@
 'use client';
 // next
-import { Link } from '@chakra-ui/next-js'
+import { Link } from '@/navigation';
 // chakra
 import {
   Flex,
