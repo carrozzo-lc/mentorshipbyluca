@@ -1,6 +1,7 @@
 'use client';
 // next
 import { Link } from '@/navigation';
+import Image from 'next/image';
 // chakra
 import {
   Flex,
@@ -9,6 +10,7 @@ import {
   Collapse,
   useBreakpointValue,
   useDisclosure,
+  Box
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -17,6 +19,8 @@ import {
 // components
 import DesktopNavigation from '../nav/DesktopNavigation/DesktopNavigation';
 import MobileNavigation from '../nav/MobileNavigation/MobileNavigation';
+// images
+import logoImg from '../../../assets/logo_web.svg';
 
 // ----------------------------------------------------------------------
 
@@ -48,7 +52,12 @@ const Header = () => {
               textDecoration: 'none',
             }}
           >
-            Mentorship by Luca
+            <Box width={170} height={'auto'}>
+            <Image
+              alt="logo"
+              src={logoImg}
+            />            
+            </Box>
           </Heading>
         </Flex>
 
