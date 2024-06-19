@@ -24,7 +24,11 @@ export const pathnames = {
   [PATH_PAGE.entrepeneur.en]: {
     it: `${PATH_PAGE.entrepeneur.it}`,
     en: `${PATH_PAGE.entrepeneur.en}`
-  }
+  },
+  [PATH_PAGE.company.en]: {
+    it: `${PATH_PAGE.company.it}`,
+    en: `${PATH_PAGE.company.en}`
+  }  
  
 } satisfies Pathnames<typeof locales>;
  
