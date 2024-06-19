@@ -60,6 +60,22 @@
       "back_link": "Back to home"
     }
   },
+  "company_page": {
+    "seo": {
+      "title": "Sblocca il Tuo Potenziale con la Mentorship per Sviluppatori Front-End",
+      "description": "Pronto a eccellere nello sviluppo web? Porta le tue competenze nello sviluppo front-end al livello successivo con la mia personalizzata Mentorship per Sviluppatori Front-End. Ottieni una guida esperta, progetti pratici e supporto alla preparazione al lavoro. Sblocca il tuo pieno potenziale e cogli emozionanti opportunità nel mondo dello sviluppo web. Prenota ora la tua sessione di mentorship.",
+      "sitename": "Programma di Mentorship Luca Carrozzo"
+    },
+    "hero": {
+      "title": "Sblocca il Tuo Potenziale con la Mentorship per Sviluppatori Front-End"
+    },
+    "content": {
+      "rich_text": "<p>Sei pronto a portare le tue <strong>competenze nello sviluppo front-end</strong> al livello successivo? Non cercare oltre! Con la mia Mentorship per Sviluppatori Front-End, riceverai la guida esperta e il supporto di cui hai bisogno per eccellere nel mondo dello sviluppo web.</p><p>Perché Scegliere la Mia Mentorship?</p><ul><li>Guida Personalizzata: In quanto esperto sviluppatore front-end, sarò il tuo mentore dedicato, fornendoti una guida personalizzata su misura per i tuoi <strong>obiettivi e aspirazioni specifici</strong>. Esaminerò il tuo codice, offrirò preziosi feedback e risponderò a tutte le tue domande. Insieme accelereremo il tuo processo di apprendimento e ti aiuteremo a superare qualsiasi sfida lungo il percorso.</li><li>Apprendimento Basato su Progetti: Ottieni esperienza pratica attraverso progetti reali ed emozionanti. Avrai l'opportunità di creare siti web e applicazioni web da zero, consentendoti di applicare le tue competenze in un contesto pratico. Questa esperienza pratica ti darà la possibilità di <strong>sviluppare un portfolio</strong> che mette in mostra le tue capacità e attira potenziali datori di lavoro.</li><li>Preparazione al Lavoro: Fatti notare dalla folla con una guida alla <strong>preparazione completa al lavoro</strong>. Dall'ottimizzazione del tuo curriculum alla padronanza delle tecniche di colloquio, ti fornirò gli strumenti e le strategie per presentarti con sicurezza e professionalità nei ruoli di sviluppo front-end. Il mio obiettivo ultimo è il tuo successo nel trovare il lavoro dei tuoi sogni.</li></ul><p><strong>Come Funziona:</strong></p><p>Durante il nostro percorso di mentorship, collaboreremo strettamente per garantire il tuo successo. Ecco cosa puoi aspettarti:</p><ul><li>Sessioni Flessibili: Offro fino a <strong>3 ore</strong> di supporto dedicato a settimana, per un totale di 12 ore al mese. Lavoreremo insieme per trovare gli orari delle sessioni più convenienti che si adattano al tuo programma. Che tu abbia bisogno di assistenza occasionale o di una guida regolare, sono qui per soddisfare le tue esigenze e fornire il supporto necessario.</li><li>Prenotazione Semplice: Pronto a fare il passo successivo? Prenota ora la tua sessione di mentorship attraverso il mio link Calendly. È veloce e senza complicazioni. Scegli semplicemente uno slot temporale che ti si addice meglio, e ci imbarcheremo insieme in questo viaggio trasformativo.</li></ul><p><strong>Valutazione e Continuazione:</strong></p><p>Per garantire il tuo progresso e la tua soddisfazione, esamineremo e valuteremo regolarmente il tuo percorso di sviluppo. Questa valutazione ci aiuterà a personalizzare la nostra mentorship per soddisfare le tue esigenze in evoluzione e garantire che tu stia procedendo verso il raggiungimento dei tuoi obiettivi. La nostra collaborazione non si ferma finché non avrai realizzato ciò che ti sei prefisso di raggiungere.</p><p>Pronto a Elevare le Tue Competenze nello Sviluppo Front-End?</p><p>Non perdere questa opportunità di ricevere una mentorship esperta che spingerà avanti la tua <strong>carriera nello sviluppo front-end</strong>. Prenota ora la tua sessione di mentorship cliccando il pulsante qui sotto. Insieme sbloccheremo il tuo pieno potenziale e aprirai le porte a emozionanti opportunità nel mondo dello sviluppo web.</p>",
+      "cta_btn": "Prenota la prima sessione gratuita",
+      "calendly_link": "https://calendly.com/me-lc/mentorship-first-free-session",
+      "back_link": "Torna alla pagina iniziale"
+    }
+  },  
   "page_404": {
     "title": "Oops! Page not found.",
     "content": "Our team is on the case to track it down. In the meantime, take a breather and enjoy a virtual cup of tea. We'll have things sorted in a jiffy!",
