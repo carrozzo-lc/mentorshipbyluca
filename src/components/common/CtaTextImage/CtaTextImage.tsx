@@ -1,6 +1,6 @@
 import { Link } from "@/navigation";
 // next 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 // chakra
 import { Container, Heading, Button, Stack, Text, SimpleGrid, Flex, Box, useBreakpointValue } from '@chakra-ui/react';
 
@@ -11,7 +11,7 @@ type CtaTextImageProps = {
   description: string, 
   btnText: string, 
   btnRoute: string, 
-  image: string, 
+  image: string | StaticImageData, 
   imageToText?: boolean
 }
 
@@ -34,7 +34,8 @@ const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToTex
         textAlign={{ base: 'center', md: 'left' }}
       >
 
-        <Stack spacing={4} order={imageToText ? 2 : !isDesktop ? 2 : 1}>
+        <Stack 
+          spacing={4} order={imageToText ? 2 : !isDesktop ? 2 : 1}>
           <Heading as="h2" size="xl">
             {title}
           </Heading>
@@ -54,10 +55,17 @@ const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToTex
         <Flex 
           order={imageToText ? 1 : !isDesktop ? 1 : 2 } 
           justifyContent={imageToText ? 'flex-start' : 'flex-end'}
+          pr={imageToText ? { base: 0, md: 10 } : 0}
+          pl={imageToText ? 0 : { base: 0, md: 10 }}
+          pb={{ base: 5, md: 0 }}
         >
           <Image
             alt={'feature image'}
             src={image}
+            style={{
+              overflow: 'hidden',
+              borderRadius: '30px'
+            }}      
           />
         </Flex>
 

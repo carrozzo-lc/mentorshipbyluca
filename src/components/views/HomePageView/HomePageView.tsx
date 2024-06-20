@@ -7,8 +7,8 @@ import { Box } from '@chakra-ui/react';
 import Hero from "@/components/common/Hero";
 import CtaTextImage from '@/components//common/CtaTextImage';
 // assets
-import entrepeneursImg from '../../../assets/entrepeneurs.svg';
-import careersImg from '../../../assets/careers.svg'
+import entrepeneursImg from '../../../assets/entrepeneurs.jpg';
+import careersImg from '../../../assets/careers.jpg'
 
 // ----------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ const HomePageView = () => {
     <>
       <Hero 
         title={t('hero.title')}
-        description={t('hero.description')}
+        description={t.raw('hero.description')}
       />
       <Box py={9} />
       <CtaTextImage
@@ -29,7 +29,7 @@ const HomePageView = () => {
         image={entrepeneursImg}
         imageToText 
       />
-      <Box py={{ base: 9, sm: 8 }} />
+      <Box py={{ base: 9, sm: 10 }} />
       <CtaTextImage
         title={t('cta_careers.title')}
         description={t('cta_careers.description')}

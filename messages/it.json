@@ -15,7 +15,7 @@
     },
     "hero": {
       "title": "Ottieni assistenza da un esperto in UI/UX & Sviluppo Front-End",
-      "description": "Eleva la tua presenza web con la mia esperienza in design UI/UX e sviluppo front-end. Sono specializzato nel trasformare la tua visione in realtà, offrendo esperienze online eccezionali. Porta i tuoi progetti web al livello successivo con un professionista di fiducia al tuo fianco."
+      "description": "<p>Cerchi il salto di qualità per la tua presenza online? Desideri ottimizzare il tuo sito web e la sua usabilità? Con la mia esperienza in design UI/UX e sviluppo front-end <strong>posso aiutarti a trasformare la tua visione in realtà.</strong></p><p>Grazie al mio supporto professionale <strong>potrai offrire agli utenti un’esperienza online di qualità, facile e intuitiva.</strong></p><p>Ti aiuterò a migliorare la tua reputazione digitale e a <strong>risolvere tempestivamente ogni problema tecnico.</strong></p>"
     },
     "cta_entrepeneur": {
       "title": "Mentorship per imprenditori",
@@ -31,7 +31,7 @@
   "entrepeneur_page": {
     "seo": {
       "title": "Mentorship per imprenditori: accelera il successo del tuo progetto web",
-      "description": "Porta le tue competenze nello sviluppo front-end al livello successivo con una mentorship personalizzata. Ottieni una guida esperta, esperienza pratica e una preparazione completa al lavoro. Prenota la tua sessione di mentorship ora per sbloccare il tuo pieno potenziale nel mondo dello sviluppo web.",
+      "description": "Design UI/UX, ottimizzazione User Experience, supporto tecnico: sblocca il potenziale del tuo progetto web con il mio servizio di mentorship per imprenditori.",
       "sitename": "Programma di Mentorship Luca Carrozzo"
     },
     "hero": {
@@ -46,8 +46,8 @@
   },
   "career_page": {
     "seo": {
-      "title": "Sblocca il Tuo Potenziale con la Mentorship per Sviluppatori Front-End",
-      "description": "Pronto a eccellere nello sviluppo web? Porta le tue competenze nello sviluppo front-end al livello successivo con la mia personalizzata Mentorship per Sviluppatori Front-End. Ottieni una guida esperta, progetti pratici e supporto alla preparazione al lavoro. Sblocca il tuo pieno potenziale e cogli emozionanti opportunità nel mondo dello sviluppo web. Prenota ora la tua sessione di mentorship.",
+      "title": "Mentorship per la carriera: dai un boost alle tue competenze da sviluppatore front-end!",
+      "description": "Con il servizio di mentorship per la carriera puoi potenziare le tue competenze nello sviluppo front-end. Contattami subito per iniziare un percorso insieme.",
       "sitename": "Programma di Mentorship Luca Carrozzo"
     },
     "hero": {
@@ -62,8 +62,8 @@
   },
   "company_page": {
     "seo": {
-      "title": "Sblocca il Tuo Potenziale con la Mentorship per Sviluppatori Front-End",
-      "description": "Pronto a eccellere nello sviluppo web? Porta le tue competenze nello sviluppo front-end al livello successivo con la mia personalizzata Mentorship per Sviluppatori Front-End. Ottieni una guida esperta, progetti pratici e supporto alla preparazione al lavoro. Sblocca il tuo pieno potenziale e cogli emozionanti opportunità nel mondo dello sviluppo web. Prenota ora la tua sessione di mentorship.",
+      "title": "Mentorship per aziende: incrementa la produttività e la qualità del lavoro",
+      "description": "Supporto nel design UI/UX, formazione interna, assistenza, feedback continui: migliora la qualità del lavoro con il mio servizio di mentorship per aziende.",
       "sitename": "Programma di Mentorship Luca Carrozzo"
     },
     "hero": {
@@ -90,7 +90,7 @@
     },
     "about": {
       "title": "Chi sono",
-      "description": "Sono Luca Carrozzo, un Sviluppatore UI/UX & Front-End con sede in Italia. Mi concentro principalmente sullo sviluppo di siti web e interfacce per applicazioni web, ma amo affrontare qualsiasi sfida nel campo dello sviluppo front-end."
+      "description": "Sono Luca Carrozzo, un Sviluppatore UI/UX & Front-End. Mi concentro principalmente sullo sviluppo di siti web e interfacce per applicazioni web, ma amo affrontare qualsiasi sfida nel campo dello sviluppo front-end."
     },
     "expertise": {
       "title": "Competenze",
