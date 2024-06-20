@@ -39,9 +39,7 @@ const CtaTextImage = ({ title, description, btnText, btnRoute, image, imageToTex
           <Heading as="h2" size="xl">
             {title}
           </Heading>
-          <Text fontSize={'lg'}>
-            {description}
-          </Text>
+          <Text as="div" fontSize={'lg'} dangerouslySetInnerHTML={{ __html: description }}/>
           <Box mt="10px">
             <Button 
               as={Link} 

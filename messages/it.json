@@ -10,7 +10,7 @@
   "general_page": {
     "seo": {
       "title": "Eleva la Tua Presenza Web | Esperto in UI/UX e Sviluppo Front-End",
-      "description": "Trasforma la tua visione in esperienze online eccezionali con un esperto affidabile in UI/UX e Sviluppo Front-End. Ottieni assistenza da un professionista selezionato per portare i tuoi progetti web al livello successivo e migliorare la tua presenza online.",
+      "description": "Sono Luca Carrozzo, esperto in UI/UX e Sviluppo Front- End. Offro servizio di mentorship e assistenza tecnica per aziende e imprenditori. Contattami subito.",
       "sitename": "Programma di Mentorship Luca Carrozzo"
     },
     "hero": {
@@ -19,12 +19,12 @@
     },
     "cta_entrepeneur": {
       "title": "Mentorship per imprenditori",
-      "description": "Il mio servizio di mentorship per imprenditori ti consentirà di esprimere tutto il potenziale del tuo progetto web. Con il mio aiuto potrai conquistare il pubblico tramite un design UI/UX studiato in ogni dettaglio e superare ogni sfida tecnica. Collaborare con un mentore che comprende la tua visione è un passo fondamentale per dare una spinta decisiva al tuo progetto: prenota subito la tua prima sessione gratuita.",
+      "description": "<p>Il mio servizio di mentorship per imprenditori ti consentirà di esprimere tutto il potenziale del tuo progetto web. Con il mio aiuto <strong>potrai conquistare il pubblico tramite un design UI/UX studiato in ogni dettaglio</strong> e superare ogni sfida tecnica. Collaborare con un mentore che comprende la tua visione è un passo fondamentale per dare una spinta decisiva al tuo progetto: prenota subito la tua prima sessione gratuita.</p>",
       "btn_text": "Scopri di più"
     },
     "cta_careers": {
       "title": "Mentorship per la carriera",
-      "description": "Migliora le tue competenze nella programmazione con il mio servizio di Mentorship per sviluppatori Front-End! Tramite un approccio personalizzato e un sistema di apprendimento basato su progetti pratici, ti aiuterò a eccellere nello sviluppo web e a rendere il tuo profilo professionale più completo e appetibile. Orari flessibili e prenotazione senza problemi. Prenota subito la tua prima sessione gratuita.",
+      "description": "<p>Migliora le tue competenze nella programmazione con il mio servizio di Mentorship per sviluppatori Front-End! Tramite un approccio personalizzato e un sistema di apprendimento basato su progetti pratici, <strong>ti aiuterò a eccellere nello sviluppo web e a rendere il tuo profilo professionale più completo e appetibile.</strong> Orari flessibili e prenotazione senza problemi. Prenota subito la tua prima sessione gratuita.</p>",
       "btn_text": "Scopri di più"
     }
   },
@@ -118,17 +118,17 @@
         "item_5": {
           "icon": "react",
           "title": "React Js",
-          "subtitle": "Sfruttando il potere di React, sviluppo applicazioni web dinamiche e reattive. Utilizzando le migliori pratiche e il codice pulito, creo esperienze veloci, efficienti e user-friendly che coinvolgono e catturano il tuo pubblico."
+          "subtitle": "Uso React per sviluppare applicazioni web dinamiche e reattive. Le mie competenze tecniche mi permettono di garantire esperienze ottimizzate e user-friendly, che coinvolgono e catturano il tuo pubblico."
         },
         "item_6": {
           "icon": "shopify",
           "title": "Shopify",
-          "subtitle": "Costruisco siti web personalizzati su Shopify con le migliori pratiche e il codice pulito. Godi di un'esperienza di e-commerce veloce, sicura e senza problemi per la tua attività."
+          "subtitle": "Costruisco siti web personalizzati su Shopify. Ti aiuterò a mettere a punto un'esperienza di e-commerce veloce, sicura e senza problemi per la tua attività."
         },
         "item_7": {
           "icon": "wordpress",
           "title": "WordPress",
-          "subtitle": "Creo siti web WordPress da zero con le migliori pratiche e il codice pulito. Sperimenta siti web veloci, sicuri e affidabili su misura per le tue esigenze."
+          "subtitle": "Sono esperto nella creazione di siti web WordPress da zero. L’utilizzo delle best practices e una scrittura di codice pulita mi permettono di creare siti web rapidi, sicuri e affidabili su misura per le tue esigenze."
         }
       }
     },

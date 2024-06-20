@@ -23,7 +23,7 @@ const HomePageView = () => {
       <Box py={9} />
       <CtaTextImage
         title={t('cta_entrepeneur.title')}
-        description={t('cta_entrepeneur.description')}
+        description={t.raw('cta_entrepeneur.description')}
         btnText={t('cta_entrepeneur.btn_text')}
         btnRoute="/entrepeneur"
         image={entrepeneursImg}
@@ -32,7 +32,7 @@ const HomePageView = () => {
       <Box py={{ base: 9, sm: 10 }} />
       <CtaTextImage
         title={t('cta_careers.title')}
-        description={t('cta_careers.description')}
+        description={t.raw('cta_careers.description')}
         btnText={t('cta_careers.btn_text')}
         btnRoute="/career"
         image={careersImg}
