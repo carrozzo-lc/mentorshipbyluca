@@ -17,7 +17,7 @@ type MentorshipLayoutProps = {
 export default function MentorshipLayout({ children }: MentorshipLayoutProps) {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
-      <Box bg='brand.50'>
+      <Box>
         <Header />
         {children}
         <Footer />

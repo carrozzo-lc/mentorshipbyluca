@@ -20,7 +20,17 @@ const Hero = ({ title, description, scrollButton}: HeroProps) => {
     >
       <Box sx={{ maxWidth: 600, textAlign: 'center', margin: 'auto' }}>
         <Heading as="h1" size="xl">{title}</Heading>
-        {description && <Text fontSize='lg' mt="12px">{description}</Text>}      
+        {description && <Text
+          as="div"
+          fontSize='lg' 
+          mt="16px"
+          sx={{
+            'p': {
+              mb: '12px'
+            }
+          }}
+          dangerouslySetInnerHTML={{ __html: description }}/>
+        }
         {scrollButton && (
           <Button variant='outline' sx={{ 
             color: 'white',
