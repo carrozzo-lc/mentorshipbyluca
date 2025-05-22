@@ -7,9 +7,10 @@ type HeroProps = {
   title: string,
   description?: string,
   scrollButton?: boolean
+  block?: any;
 }
 
-const Hero = ({ title, description, scrollButton}: HeroProps) => {
+const Hero = ({ title, description, scrollButton, block }: HeroProps) => {
   return (
     <Box 
       bg='brand.500' 
@@ -46,6 +47,7 @@ const Hero = ({ title, description, scrollButton}: HeroProps) => {
           </Button>        
         )}
       </Box>
+      {block && block}     
     </Box>
   );
 }
